@@ -12,5 +12,6 @@ if __name__ == "__main__":
     left_motor = RobotMotor("Левый")
     right_motor = RobotMotor("Правый")
 
-    left_motor.set_speed(50)
-    right_motor.set_speed(50)
+    for i in range(50):
+        left_motor.set_speed(i)
+        right_motor.set_speed(i)
